@@ -155,4 +155,131 @@ Buat File baru dengan nama **latihan3.php** dalam directory folder **lab7_php_da
 </html>
 ```
 
-## 8). 
+## 8). OPERATOR 
+![operator](img/operator.png)
+
+**PENJELASAN**
+
+Membuat ***OPERATOR*** dalam php seperti contoh hasil tampilan di atas beserta code nya.
+
+**code php**
+```php
+    <?php
+        $gaji = 1000000;
+        $pajak = 0.1;
+        $thp = $gaji - ($gaji*$pajak);
+        echo "Gaji sebelum pajak = Rp. $gaji <br>";
+        echo "Gaji yang dibawa pulang = Rp. $thp";
+    ?>
+```
+
+## 9). KONDISI IF
+![kondisi-if](img/kondisi-if.png)
+
+**PENJELASAN**
+
+Pengondisian **IF ELSE** seperti hasil tampilan dan code digambar atas
+
+**code php**
+```php
+    <?php
+        $nama_hari = date("l");
+        if ($nama_hari == "Sunday") {
+            echo "Minggu";
+        } elseif ($nama_hari == "Monday") {
+            echo "Senin";
+        } else {
+            echo "Selasa";
+        }
+    ?>
+```
+
+## 10). KONDISI SWITCH
+![kondisi-swicth](img/kondisi-switch.png)
+
+**PENJELASAN**
+
+Contoh penggunaan pengondisian **SWICTH CASE** dengan ***Break*** seperti contoh hasil diatas beserta code.
+
+**code php**
+```php
+<?php
+        $nama_hari = date("l");
+        switch ($nama_hari) {
+            case "Sunday":
+                 echo "Minggu";
+                 break;
+            case "Monday":
+                echo "Senin";
+                break;
+             case "Tuesday":
+                 echo "Selasa";
+                break;
+            default:
+                echo "Sabtu"; 
+            }
+            echo "/$nama_hari";
+    ?>
+```
+
+## 11). PERULANGAN FOR
+![perulangan-for](img/perulangan-for.png)
+
+**PENJELASAN**
+
+Menggunakan **PERULANGAN FOR** seperti hasil dan code di atas
+
+**code php**
+```php
+<?php
+        echo "Perulangan 1 sampai 10 <br />";
+        for ($i=1; $i<=10; $i++) {
+            echo "Perulangan ke: " . $i . '<br />';
+}
+        echo "Perulangan Menurun dari 10 ke 1 <br />";
+        for ($i=10; $i>=1; $i--) {
+            echo "Perulangan ke: " . $i . '<br />';
+}
+?>
+```
+
+## 12). PERULANGAN WHILE
+![perulangan-while](img/perulangan-while.png)
+
+**PENJELASAN**
+
+Menggunakan **PERULANGAN WHILE** seperti hasil gambar dan code di atas.
+
+**code php**
+```php
+<?php
+    echo "Perulangan 1 sampai 10 <br />";
+    $i=1;
+    while ($i<=10) {
+        echo "Perulangan ke: " . $i . '<br />';
+        $i++;
+}
+?> 
+```
+
+## 13). PERULANGAN DOWHILE
+![perulangan-dowhile](img/perulangan-dowhile.png)
+
+**PENJELASAN**
+
+Menggunakan **PERULANGAN DOWHILE** seperti hasil gambar di atas yg beserta code php nya.
+
+**code php**
+```php
+<?php
+    echo "Perulangan 1 sampai 10 <br />";
+    $i=1;
+    do {
+        echo "Perulangan ke: " . $i . '<br />';
+        $i++;
+    } while ($i<=10);
+?>  
+```
+
+## PERTANYAAN DAN TUGAS
+Buatlah program **PHP** sederhana dengan menggunakan ***form input*** yang menampilkan **nama** , **tanggal lahir** dan **pekerjaan** . Kemudian tampilkan outputnya dengan menghitung umur berdasarkan inputan **tanggal lahir** . Dan pilihan **pekerjaan** dengan gaji yang berbeda-beda sesuai pilihan **pekerjaan**.
