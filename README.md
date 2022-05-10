@@ -52,6 +52,8 @@ Buat File baru dengan nama **php_dasar.php** pada directory tersebut kemudian bu
 
 **PENJELASAN** 
 
+Kemudian akses URL untuk hasil nya : http://localhost/Lab7Web/lab7_php_dasar/php_dasar.php
+
 Di atas adalah contoh hasil dari penggunaan **PHP** dalam file html atau **embed**
 
 **code php**
@@ -72,5 +74,85 @@ Di atas adalah contoh hasil dari penggunaan **PHP** dalam file html atau **embed
 </body>
 </html>
 ```
+## 5). VARIABLE PHP
+Menambahkan Variable pada program 
 
+![variable-php](img/variable-php.png)
 
+**PENJELASAN**
+
+Di atas adalah contoh penggunaan Variable di **PHP**
+
+**code php**
+```php
+<h2>Menggunakan Variable</h2>
+    <?php
+       $nim = "0411500400";
+       $nama = 'Abdullah';
+       echo "NIM : " . $nim . "<br>";
+       echo "Nama : $nama"; 
+    ?>
+```
+
+## 6). PREDEFINE VARIABLE $_GET
+Menggunakan **Predefine Variable**
+
+![predefine-variable](img/predefine-variable.png)
+
+**PENJELASAN**
+
+Buat File baru dalam directory **lab7_php_dasar** dengan nama file nya adalah **latihan2.php** dan buat code seperti dibawah dan untuk mengaksesnya gunakan URL: http://localhost/Lab7Web/lab7_php_dasar/latihan2.php?nama=Herliyansyah
+dan tampilan nya seperti gambar diatas.
+
+**code php**
+```php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Dasar</title>
+</head>
+<body>
+    <!-- Variable $_GET -->
+    <h2>Predefine Variable</h2>
+<?php
+    echo 'Selamat Datang ' . $_GET['nama'];
+?> 
+</body>
+</html>
+```
+
+## 7). MEMBUAT FORM INPUT
+![membuat-form-input](img/form-input.png)
+
+**PENJELASAN**
+
+Buat File baru dengan nama **latihan3.php** dalam directory folder **lab7_php_dasar**  di atas adalah hasil atau tampilan dalam membuat ***form*** dalam php dengan variable $_POST contoh code seperti dibawah
+
+**code php**
+```php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Dasar</title>
+</head>
+<body>
+    <h2>Form Input</h2>
+    <form method="post">
+        <label for="Nama">Nama: </label>
+        <input type="text" name="nama">
+        <input type="submit" value="Kirim">
+    </form>
+    <?php
+        echo 'Selamat Datang ' . $_POST['nama'];
+    ?>
+</body>
+</html>
+```
+
+## 8). 

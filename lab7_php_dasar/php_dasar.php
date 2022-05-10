@@ -11,5 +11,13 @@
     <?php
         echo "Hello World";
     ?>
-</body>
+   <!-- Variable PHP -->
+   <h2>Menggunakan Variable</h2>
+    <?php
+       $nim = "0411500400";
+       $nama = 'Abdullah';
+       echo "NIM : " . $nim . "<br>";
+       echo "Nama :   $nama"; 
+    ?>
+    </body>
 </html>
